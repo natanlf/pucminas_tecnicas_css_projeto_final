@@ -67,7 +67,7 @@ const Controls = ({ audioRef, progressBarRef, duration, setTimeProgress, tracks,
     };
     
     return (
-        <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        <Box sx={{display: 'flex', flexDirection: 'column', width: '100%' }}>
             <Box>
                 <IconButton onClick={handlePrevious}>
                     <SkipPreviousIcon />
@@ -80,26 +80,39 @@ const Controls = ({ audioRef, progressBarRef, duration, setTimeProgress, tracks,
                     <SkipNextIcon />
                 </IconButton>
             </Box>
-            <Box xs={12}>
-                <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
-                    <IconButton onClick={() => setMuteVolume((prev) => !prev)}>
-                        {muteVolume || volume < 5 ? (
-                            <VolumeOffIcon />
-                        ) : volume < 40 ? (
-                            <VolumeDownIcon />
-                        ) : (
-                            <VolumeUpIcon />
-                        )}
-                    </IconButton>
-                    <Slider aria-label="Volume"
-                        type="range"
-                        min={0}
-                        max={100}
-                        value={volume}
-                        onChange={(e) => setVolume(e.target.value)}
-                    />
-                </Stack>
-            </Box>
+            <Stack spacing={2} direction="row" 
+                sx={{ mb: 1, mt: 1 }} alignItems="center" alignSelf={'end'} width={150}>
+                <IconButton onClick={() => setMuteVolume((prev) => !prev)}>
+                    {muteVolume || volume < 5 ? (
+                        <VolumeOffIcon />
+                    ) : volume < 40 ? (
+                        <VolumeDownIcon />
+                    ) : (
+                        <VolumeUpIcon />
+                    )}
+                </IconButton>
+                <Slider 
+                    sx={{
+                        
+                        '& .MuiSlider-thumb': {
+    
+                            '&:before': {
+                            boxShadow: '0 4px 8px rgba(0,0,0,0.4)',
+                            },
+                            '&:hover, &.Mui-focusVisible, &.Mui-active': {
+                            boxShadow: 'none',
+                            },
+                        },
+                        }}
+                    aria-label="Volume"
+                    type="range"
+                    min={0}
+                    max={100}
+                    value={volume}
+                    width={200}
+                    onChange={(e) => setVolume(e.target.value)}
+                />
+            </Stack>
         </Box>
     );
 }

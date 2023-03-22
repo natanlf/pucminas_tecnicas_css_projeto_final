@@ -32,15 +32,13 @@ const ProgressBar = ({ progressBarRef, audioRef, timeProgress, duration }) => {
 
     return (
       <Box sx={12} spacing={2} direction='row' justifyContent="space-between">
-        <input style={{width: '100%', color: "#90caf9", borderRadius: '12px', height: "4px", display: 'inline-block',
-          padding: "13px 0", WebkitTapHighlightColor: 'transparent', boxSizing: "content-box", touchAction: 'none', backgroundColor: "90caf9"}} 
-          type="range" ref={progressBarRef} defaultValue="0" onChange={handleProgressChange}/>
+        <input type="range" ref={progressBarRef} defaultValue="0" onChange={handleProgressChange}/>
         <Box
           sx={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            mt: -2,
+            mt: 1,
             width: '100%'
           }}
         >

@@ -9,24 +9,28 @@ import cent from './cent.jpg';
 
 export const tracks = [
   {
+    id: 1,
     title: "Enter Sandman",
     src: enterSandman,
     author: "Metallica",
     thumbnail: metallica
   },
   {
+    id: 2,
     title: "In Da Club",
     src: centMusic,
     author: "50 cent",
     thumbnail: cent
   },
   {
+    id: 3,
     title: "Nothing Else Matters",
     src: nothing,
     author: "Metallica",
     thumbnail: metallica
   },
   {
+    id: 4,
     title: "The Unforgiven",
     src: unforgiven,
     author: "Metallica",

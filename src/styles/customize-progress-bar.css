@@ -9,28 +9,29 @@ input[type="range"] {
     
     -webkit-appearance: none;
     position: relative;
-    background:#ccc;
+    background:#90caf9;
     width: 100%;
-    height: 2px;
-    border-radius: 2px;
+    height: 4px;
+    border-radius: 12px;
     cursor: pointer;
+    //opacity: 0.38;
   }
   
   /* Input range - firefox */
   input[type="range"]::-moz-range-track {
     position: relative;
-    background:#ccc;
+    background:#90caf9;
     width: 100%;
-    height: 2px;
-    border-radius: 2px;
+    height: 4px;
+    border-radius: 12px;
     cursor: pointer;
   }
   
   /* played progress length - Chrome & safari*/
   input[type="range"]::before {
     content: '';
-    height: 2px;
-    background: #f50;
+    height: 4px;
+    background: red;
     width: var(--range-progress);
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
@@ -41,40 +42,40 @@ input[type="range"] {
   
   /* played progress length - firefox */
   input[type="range"]::-moz-range-progress {
-    background: #f50;
+    background: red;
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
-    height: 2px;
+    height: 4px;
   }
   
   /* slider thumb - chrome and safari */
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 8px;
-    width: 8px;
+    height: 18px;
+    width: 18px;
     border-radius: 50%;
     border: none;
-    background-color: #f50;
+    background-color: #90caf9;
     cursor: pointer;
     position: relative;
   }
   
   /* dragging thumb - chrome and safari */
   input[type="range"]:active::-webkit-slider-thumb {
-    transform: scale(1.2);
+    //transform: scale(1.2);
   }
   
   /* slider thumb - firefox */
   input[type="range"]::-moz-range-thumb {
-    height: 8px;
-    width: 8px;
+    height: 18px;
+    width: 18px;
     border-radius: 50%;
-    background: #f50;
+    background: #90caf9;
     cursor: pointer;
     border: transparent;
     position: relative;
   }
   /* dragging thumb - firefox */
   input[type="range"]:active::-moz-range-thumb {
-    transform: scale(1.2);
+    //transform: scale(1.2);
   }
