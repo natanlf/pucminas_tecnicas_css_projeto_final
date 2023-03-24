@@ -17,24 +17,40 @@ import Grid from '@mui/material/Grid';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+
+import { amber, deepOrange, lightBlue, grey, red, blue, blueGrey } from '@mui/material/colors';
+
+const getDesignTokens = (mode) => ({
+  palette: {
+    mode: 'dark',
+    background: {
+      default: "#010100",
+      //paper: blueGrey[900],
+    },
+    text: {
+      primary: grey[100],
+      secondary: grey[500]
+    }
+  }
+});
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
   padding: theme.spacing(0),
   textAlign: 'center',
-  color: theme.palette.text.secondary,
+  color: theme.palette.text.secondary
 }));
 
-const darkTheme = createTheme({ 
-  palette: {
-    mode: 'dark'
-  }
-});
+
+
+const darkTheme = createTheme(getDesignTokens('dark'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      <ThemeProvider theme={darkTheme}>
+     <CssBaseline />
       <Header></Header>
       <Box sx={{ flexGrow: 1, mt: 2 }} >
         <Grid container spacing={2} direction="row" justifyContent="center">

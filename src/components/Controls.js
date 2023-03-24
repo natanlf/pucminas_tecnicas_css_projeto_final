@@ -70,14 +70,14 @@ const Controls = ({ audioRef, progressBarRef, duration, setTimeProgress, tracks,
         <Box sx={{display: 'flex', flexDirection: 'column', width: '100%' }}>
             <Box>
                 <IconButton onClick={handlePrevious}>
-                    <SkipPreviousIcon />
+                    <SkipPreviousIcon fontSize="large"/>
                 </IconButton>
 
                 <IconButton onClick={togglePlayPause}>
-                    {isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
+                    {isPlaying ? <PauseIcon fontSize="large" /> : <PlayArrowIcon fontSize="large" />}
                 </IconButton>
                 <IconButton onClick={handleNext}>
-                    <SkipNextIcon />
+                    <SkipNextIcon fontSize="large"/>
                 </IconButton>
             </Box>
             <Stack spacing={2} direction="row" 
