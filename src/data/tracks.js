@@ -1,39 +1,45 @@
 // audio files
 import enterSandman from './Metallica_-Enter_Sandman.mp3';
-import nothing from './Metallica_-_Nothing_Else_Matters.mp3';
-import unforgiven from './Metallica_-_The_Unforgiven.mp3';
+import masterMusic from './Master-of-Puppets.mp3';
 import centMusic from './50_Cent_-_In_Da_Club.mp3';
+import graveMusic from './No-Grave.mp3';
+import bellsMusic from './For-Whom-The-Bell-Tolls.mp3';
 // audio thumbnails
 import metallica from './metallica.jpg';
+import masterPic from './master-of-puppets.jpg';
 import cent from './cent.jpg';
+import gravePic from './no-grave.jpg';
+import bellsPic from './ride-the-lighthing.jpg';
 
 export const tracks = [
   {
-    id: 1,
     title: "Enter Sandman",
     src: enterSandman,
     author: "Metallica",
     thumbnail: metallica
   },
   {
-    id: 2,
+    title: "For Whom The Bell Tolls",
+    src: bellsMusic,
+    author: "Metallica",
+    thumbnail: bellsPic
+  },
+  {
     title: "In Da Club",
     src: centMusic,
     author: "50 cent",
     thumbnail: cent
   },
   {
-    id: 3,
-    title: "Nothing Else Matters",
-    src: nothing,
+    title: "Master of Puppets",
+    src: masterMusic,
     author: "Metallica",
-    thumbnail: metallica
+    thumbnail: masterPic
   },
   {
-    id: 4,
-    title: "The Unforgiven",
-    src: unforgiven,
-    author: "Metallica",
-    thumbnail: metallica
+    title: "Ain't No Grave",
+    src: graveMusic,
+    author: "Jonny Cash",
+    thumbnail: gravePic
   }
 ];
