@@ -18,14 +18,17 @@ import Grid from '@mui/material/Grid';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import { amber, deepOrange, lightBlue, grey, red, blue, blueGrey } from '@mui/material/colors';
+import { grey, green } from '@mui/material/colors';
 
 const getDesignTokens = (mode) => ({
   palette: {
     mode: 'dark',
     background: {
-      default: "#010100",
-      //paper: blueGrey[900],
+      default: grey['800'],
+      /*paper: grey['400'],*/
+    },
+    primary: {
+      main: green[500],
     },
     text: {
       primary: grey[100],
@@ -35,7 +38,7 @@ const getDesignTokens = (mode) => ({
 });
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  backgroundColor: theme.palette.mode === 'dark' ? grey['900'] : '#fff',
   ...theme.typography.body2,
   padding: theme.spacing(0),
   textAlign: 'center',
@@ -55,7 +58,7 @@ root.render(
       <Box sx={{ flexGrow: 1, mt: 2 }} >
         <Grid container spacing={2} direction="row" justifyContent="center">
           <Grid item xs={12} md={6} lg={5} xl={4}>
-            <Item><AudioPlayer/></Item>
+            <Item elevation={4}><AudioPlayer/></Item>
           </Grid>
         </Grid>
       </Box>
