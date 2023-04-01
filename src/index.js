@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-
-
-//import './index.css';
 import './styles/customize-progress-bar.css';
 import AudioPlayer from './components/AudioPlayer';
 import Header from './components/Header';
@@ -24,8 +21,7 @@ const getDesignTokens = (mode) => ({
   palette: {
     mode: 'dark',
     background: {
-      default: grey['800'],
-      /*paper: grey['400'],*/
+      default: grey['800']
     },
     primary: {
       main: green[500],
