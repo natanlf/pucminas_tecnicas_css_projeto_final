@@ -7,19 +7,18 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import { grey, green } from '@mui/material/colors';
 
 const getDesignTokens = (mode) => ({
   palette: {
-    mode: 'dark',
+    mode: mode,
     background: {
       default: grey['800']
     },
@@ -43,12 +42,12 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 
-const darkTheme = createTheme(getDesignTokens('dark'));
+const customTheme = createTheme(getDesignTokens('dark'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <ThemeProvider theme={darkTheme}>
+     <ThemeProvider theme={customTheme}>
      <CssBaseline />
       <Header></Header>
       <Box sx={{ flexGrow: 1, mt: 2 }} >
