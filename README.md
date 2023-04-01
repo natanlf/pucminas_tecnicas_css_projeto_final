@@ -33,7 +33,7 @@ Apenas o slider de progresso da música que tem classes css em um arquivo, o res
 * `Content` (Conteúdo) que é a parte do conteúdo onde temos o player de música;
 * `Footer` (Rodapé) com as informações do autor e instituição de ensino.
 
- Utilizei componentes que o MUI Material oferece como Box, AppBar, Toolbar, Typography entre outros. Consegui estruturar e estilizar esses e outros componentes.
+ Utilizei componentes que o MUI Material UI oferece como Box, AppBar, Toolbar, Typography entre outros. Consegui estruturar e estilizar esses e outros componentes.
 
  Criei um tema customizado.
 
