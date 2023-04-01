@@ -40,8 +40,6 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary
 }));
 
-
-
 const customTheme = createTheme(getDesignTokens('dark'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

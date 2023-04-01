@@ -37,6 +37,8 @@ Apenas o slider de progresso da música que tem classes css em um arquivo, o res
 
  Criei um tema customizado.
 
+Utilizei Grids, Flexbox e breakpoints para estruturar o app o deixando responsivo.
+
 ## Acesso da aplicação
 
 [Music Player - clique aqui para acessar](https://music-player-natan-puc-minas.netlify.app)
