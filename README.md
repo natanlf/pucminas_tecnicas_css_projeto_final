@@ -25,9 +25,13 @@ Apenas o slider de progresso da música que tem classes css em um arquivo, o res
 
 ![MusicPlayer](/src/data/screenshots/playerMobileFirst.PNG)
 
-* `Header` (Cabeçalho) com App Bar
-* `Content` (Conteúdo) que é a parte do conteúdo onde temos o player de música
-* `Footer` (Rodapé) com as informações do autor e instituição de ensino
+* `Header` (Cabeçalho) com App Bar;
+* `Content` (Conteúdo) que é a parte do conteúdo onde temos o player de música;
+* `Footer` (Rodapé) com as informações do autor e instituição de ensino.
+
+## Acesso da aplicação
+
+[Music Player - clique aqui para acessar](https://music-player-natan-puc-minas.netlify.app)
 
 
 

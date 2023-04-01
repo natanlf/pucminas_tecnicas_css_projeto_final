@@ -14,7 +14,6 @@ input[type="range"] {
     height: 4px;
     border-radius: 12px;
     cursor: pointer;
-    //opacity: 0.38;
   }
   
   /* Input range - firefox */
@@ -62,7 +61,7 @@ input[type="range"] {
   
   /* dragging thumb - chrome and safari */
   input[type="range"]:active::-webkit-slider-thumb {
-    //transform: scale(1.2);
+    transform: scale(1.2);
   }
   
   /* slider thumb - firefox */
@@ -77,5 +76,5 @@ input[type="range"] {
   }
   /* dragging thumb - firefox */
   input[type="range"]:active::-moz-range-thumb {
-    //transform: scale(1.2);
+    transform: scale(1.2);
   }
